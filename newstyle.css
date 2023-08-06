@@ -135,17 +135,24 @@ nav a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 20px;
 }
-.partners-logos div{
- 
+.partners-logos img{
+ width:140px;
+ height: 140px;
+ background-color: transparent;
+ border: 1px solid green;
+ margin: 20px;
 }
+
+
 
 /*FOOTER STYLE*/
 .flex-footer{
     display: grid;
     margin-left: 20px;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap:20px;
+    grid-gap:10px;
     padding: 20px;
 }
 .flex-footer div{
@@ -179,7 +186,7 @@ footer a{
     grid-template-columns: 0.80fr 0.80fr 0.80fr 0.80fr 0.80fr 0.80fr;
     padding: 20px;
     color:var(--white);
-    font-weight: 12px;
+    font-weight: 8px;
     font-weight: 250;
 }
 svg{
