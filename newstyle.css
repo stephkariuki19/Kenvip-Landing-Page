@@ -197,7 +197,6 @@ nav a:hover{
    background-color: var(--blue);
    display: grid;
    grid-template-columns: 1fr 1fr;
-   border: 1px solid green;
    max-height: 300px;
    color: var(--white);
    text-align: center;
@@ -213,7 +212,6 @@ nav a:hover{
     font-weight: 370;
 }
 .about-us div{
-    border:1px solid red;
     max-height: 300px;
 }
 .about-image img{
@@ -274,7 +272,6 @@ nav a:hover{
 }
 /*PARTNERS SECTION*/
 .partners-section{
-    border: 1px solid green;
     padding: 20px;
 }
 .partners-section h5{
@@ -285,7 +282,6 @@ nav a:hover{
     font-weight: 350;
 }
 .partners-logos{
-    border: 1px solid red;
     display: flex;
     align-items: center;
     justify-content: center;
