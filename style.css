@@ -5,7 +5,6 @@
 }
 /*HEADER STYLES*/
 header{
-    border: 1px solid red;
     max-height: 80px;
     display: flex;
     background-color:#fff ;
@@ -67,7 +66,6 @@ nav a{
 .resources div{
     max-width: 400px;
     max-height: 400px;
-    border: 1px solid saddlebrown;
     margin: 10px;
     background-color: #fff;
     border-radius: 10px;
@@ -84,9 +82,7 @@ nav a{
     padding: 10px;
 }
 /*PARTNERS SECTION*/
-.partners-section{
-    border: 1px solid green;
-}
+
 .partners-section h5{
     color: #000;
     text-align: center;
@@ -94,7 +90,6 @@ nav a{
     margin: 5px;
 }
 .partners-logos{
-    border: 1px solid red;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -138,10 +133,7 @@ footer a{
     display: flex;
     flex-direction: column;
 }
-.nav-links{
-}
-.resource-links{
-}
+
 .socials{
     min-width: 390px;
     display: grid;

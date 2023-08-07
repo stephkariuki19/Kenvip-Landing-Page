@@ -5,11 +5,10 @@
     --grey:#EEF1F9;  /*or use d2d9e4 or e8eef8*/
   }
   
-
 *{
     box-sizing: border-box;
     margin: 0px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lexend', sans-serif;
 }
 /*HEADER STYLES*/
 header{
@@ -33,7 +32,8 @@ header{
     background-color: var(--blue);
     color: var(--white);
     margin: 5px;
-
+    margin-left: 45px;
+   
 }
 nav{
     color: var(--black);
@@ -73,22 +73,38 @@ nav a:hover{
 */
 
 .portal-title{
-    color: var(--blue);
-    background-color: (--white);
+    color: var(--white);
+    background-color: var(--blue);
     font-size: 30px;
     padding: 10px;
+    text-decoration: underline;
+    margin-bottom: 5px;
+    margin: 10px;
 }
 .title-text{
     font-weight: 400;
     text-align: center;
-    letter-spacing: 2px;
+}
+.slide p{
+    background: rgba(70,130,180,0.5);
+-webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(70,130,180,0.25);
+  color: var(--white);
+  position: relative;
+  bottom: 40px;
+  overflow: hidden;
+  max-width: 200px;
+  padding: 4px;
+  border-radius: 4px;
+  margin-left: 5px;
 }
   
   .slider{
     width: 1000px;
     height: 500px;
-    border-radius: 10px;
     margin-left: 15%;
+    border-radius: 10px;
     margin-bottom:  20px;
   }
   
@@ -197,12 +213,15 @@ nav a:hover{
    background-color: var(--blue);
    display: grid;
    grid-template-columns: 1fr 1fr;
-   min-height: 400px;
+   min-height: 580px;
    color: var(--white);
    text-align: center;
+   width: 100vw;
 }
 .about-text{
     padding: 50px;
+    margin-bottom: 10px;
+    min-height: fit-content;
 }
 .about-text h3{
     font-size: 30px;
@@ -218,8 +237,8 @@ nav a:hover{
 padding: 3px;
 }
 .about-image img{
-    width:600px;
-    height: 700px;
+    max-width:600px;
+    max-height: 700px;
 
 }
 
@@ -234,7 +253,7 @@ padding: 3px;
     text-align: center;
     padding: 5px;
     padding-top: 10px;
-    font-weight: 350;
+    font-weight: 550;
    
 }
 .resources{
@@ -268,8 +287,8 @@ padding: 3px;
     background-color: var(--blue);
     border: none;
     color:var(--white);
-    width: 100px;
-    height: 35px;
+    width: 75px;
+    height: 40px;
     border-radius: 10px;
     margin-left: 35%;
 
@@ -283,7 +302,7 @@ padding: 3px;
     text-align: center;
     font-size: 20px;
     margin: 5px;
-    font-weight: 350;
+    font-weight: 550;
 }
 .partners-logos{
     display: flex;
@@ -354,4 +373,79 @@ footer h6{
 .main-container{
     overflow: hidden;
     width:100vw;
+}
+
+/*MEDIA QUERIES*/
+/* Default styles for all devices */
+/* ... (your existing styles) ... */
+
+/* Media query for mobile devices */
+/* Media query for mobile devices */
+@media (max-width: 480px) {
+  .main-container{
+    overflow: scroll;
+  }
+ header{
+  padding: 0px;
+  font-size: 10px;
+  display: block;
+  height: 120px;
+ }
+ .logo{
+  margin: 4px;
+  margin-left: 11px;
+  width:32px;
+  height: 32px;
+ }
+
+.slider{
+  margin-right: 5px;
+}
+
+.slide img{
+  width:450px;
+}
+.slide p{
+  max-width: 140px;
+}
+.about-us {
+  grid-template-columns: 1fr 1fr;
+  padding: 0 20px;
+}
+
+.about-text {
+  padding: 50px;
+  margin-bottom: 10px;
+}
+
+.about-image {
+  padding: 3px;
+}
+
+.about-image img {
+  max-width: 100%;
+  max-height: 100%;
+  position: relative;
+  top:200px;
+}
+.resources{
+  flex-direction: column;
+}
+.partners-logos{
+  flex-direction: column;
+}
+.flex-footer div{
+  margin-right: 5px;
+}
+.socials{
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+}
+footer a{
+  font-weight: 500;
+}
+.socials div{
+  margin-top: 5px;
+ }
 }
