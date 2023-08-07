@@ -52,6 +52,7 @@ nav a{
 }
 nav a:hover{
     color: var(--blue);
+    border-bottom: 1px solid var(--blue);
 }
 /*HERO SECTION*/
 .hero-section{
@@ -70,9 +71,40 @@ nav a:hover{
     left: 30px;
 }
 
+
+/*ABOUT US*/
+.about-us{
+   background-color: var(--blue);
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   border: 1px solid green;
+   max-height: 300px;
+   color: var(--white);
+   text-align: center;
+}
+.about-text{
+    padding: 20px;
+}
+.about-text h3{
+    font-size: 30px;
+    margin: 10px;
+}
+.about-text p{
+    font-weight: 370;
+}
+.about-us div{
+    border:1px solid red;
+    max-height: 300px;
+}
+.about-image img{
+    width:500px;
+    height: 600px;
+}
+
 /*RESOURCE SECTION*/
 .resource-container{
     background-color:var(--grey);
+    padding: 20px;
 }
 .resource-container h4{
     color: var(--blue);
@@ -81,6 +113,7 @@ nav a:hover{
     padding: 5px;
     padding-top: 10px;
     font-weight: 350;
+   
 }
 .resources{
     display: flex;
@@ -122,6 +155,7 @@ nav a:hover{
 /*PARTNERS SECTION*/
 .partners-section{
     border: 1px solid green;
+    padding: 20px;
 }
 .partners-section h5{
     color:var(--blue);
