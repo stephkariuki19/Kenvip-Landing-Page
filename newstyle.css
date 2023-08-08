@@ -397,6 +397,9 @@ footer h6{
   width:32px;
   height: 32px;
  }
+ nav a{
+  margin: 8px;
+ }
 /*
 .slider{
   margin-right: 5px;
@@ -437,10 +440,12 @@ footer h6{
 .partners-logos{
   flex-direction: column;
 }
+.partners-logos img{
+  width: 100%;
+}
 .flex-footer div{
   margin-right: 5px;
 }
-
 .socials{
   display: flex;
   flex-direction: column;
@@ -477,7 +482,7 @@ footer a{
     position: relative;
     bottom: 140px;
     left: 10px;
-    width:350px;
+    width:330px;
     border-radius: 5px;
   }
   .manual-btn:not(:last-child){
@@ -485,5 +490,41 @@ footer a{
   }
   .navigation-auto{
     display: none;
+  }
+  
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    overflow: scroll;
+  }
+
+  header {
+    padding: 0px;
+    font-size: 14px;
+  }
+
+  .logo {
+    margin: 4px;
+    margin-left: 11px;
+    width: 32px;
+    height: 32px;
+  }
+
+  nav  {
+    position: relative;
+    right: 165px;
+  }
+}
+@media (max-width: 840px) {
+  nav  {
+    position: relative;
+    right: 270px;
+  }
+  .partners-logos img{
+    border: 1px solid red;
+    width: 100%;
+    margin-right: 5px;
+    padding: 5px;
   }
 }
