@@ -53,23 +53,7 @@ nav a:hover{
   color: var(--blue);
   border-bottom: 1px solid var(--blue);
 }
-/* HERO SECTION
-.hero-section{
-  background-color:var(--white);
-  min-height: 350px; /*change depend on picture heights
-}
-.hero-title{
-  font-size: 24px;
-}
-.hero-text{
-  border: 1px solid red;
-  width: 220px;
-  padding: 10px;
-  position: relative;
-  top: 30px;
-  left: 30px;
-}
-*/
+
 
 .portal-title{
   color: var(--white);
@@ -221,6 +205,8 @@ margin-left: 5px;
   padding: 50px;
   margin-bottom: 10px;
   min-height: fit-content;
+  line-height: 20px;
+  font-size: 22px;
 }
 .about-text h3{
   font-size: 30px;
@@ -370,10 +356,73 @@ footer h6{
   width:100vw;
 }
 
+/* Dropdown Button */
+.chevron-down{
+  width:25px;
+  height: 25px;
+  position: relative;
+  fill: var(--blue);
+  position: relative;
+  right: 5px;
+  cursor: pointer;
+}
+.dropbtn {
+  color:var(--black);
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: rgba(70,130,180,0.5);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  top:30px;
+  border-radius: 5px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: var(--white);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  border-bottom: none;
+  backdrop-filter: blur(5px);
+  color: var(--white);
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.show{
+  display: block;
+}
+
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: var(--grey);}
+
 /*MEDIA QUERIES*/
 @media (max-width: 320px) {
   nav{
-    border: 1px solid orange;
     font-size: 8px;
     flex-wrap: wrap;
     
@@ -396,31 +445,18 @@ height: 43px;
 }
 nav{
   position: relative;
-  left: 12px;
+  left: 25px;
   font-size: 14px;
   margin-bottom: 5px;
 }
 nav a{
-margin: 8px;
+margin: 4px;
 }
 .flex-footer div:not(:last-child) {
-  border-left: none; /* Remove the left border for all except the last div */
+  border-left: none; 
 }
 
-/*
-.slider{
-margin-right: 5px;
-}
 
-.slide img{
-width:450px;
-}
-.slide p{
-max-width: 160px;
-font-size: 12px;
-position: relative;
-bottom: 70px;
-} */
 .about-us {
 display: flex;
 flex-direction: column;

@@ -13,6 +13,14 @@ document.querySelector('.top').addEventListener('click', () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
+const chevronDown = document.querySelector(".chevron-down");
+const dropdownContent = document.querySelector('.dropdown-content');
+
+chevronDown.addEventListener('click', () => {
+  dropdownContent.classList.toggle('show');
+});
+
+
 
 
 
